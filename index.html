@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid-Flow</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/theme/bootstrap.min.css" rel="stylesheet">
+    <link href="/theme/fluid.css" rel="stylesheet">
+</head>
+<body>
+       <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+      
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-secondary text-big"><strong>Fluid-Flow(FF)</strong></a></li>
+              <li><a href="#" class="nav-link px-2 text-white">White Paper</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Farming</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Team</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Community</a></li>
+            </ul>
+      
+      
+      
+            <div class="text-end">
+             
+              <button type="button" class="btn btn-warning"><strong>Connect Wallet</strong></button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- Jumbotron -->
+      <div class="p-5 mb-4 bg-light rounded-3">
+          <div class="row">
+          <div class="col-md-8">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">FARMING</h1>
+                <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                <button class="btn btn-primary btn-lg" type="button">Buy FF Token</button>
+                <button class="btn btn-dark btn-lg" type="button">Farm FF Token</button>
+              </div>
+      
+          </div>
+          <div class="col-md-4">
+
+            <div class="card bg-dark text-light" style="width: 18rem; border-radius: 20px;">
+                <div class="card-body">
+                  <h1 class="card-title">Summary</h1>
+                  <h4><strong>Total Volume</strong> 100,000,000</h4>
+                <h4 class="mt-3"><strong>Total Released</strong> 1,000,000</h4>
+                <h4 class="mt-3"><strong>Market Cap</strong> 1,000,000$</h4>
+                </div>
+              </div>
+           
+          </div>
+          </div>     
+       
+        </div>
+
+    <div class="bg-gray pt-xl-5">
+        <div class="container" id="farming">
+            <h1 class="text-dark font-60">FARMING</h1>
+            <div class="row">
+                <div class="col-lg-4 pt-5 text-center">
+                    <a target="_blank" class="btn-blue" href="https://app.uniswap.org/#/add/0x692eb773e0b5b7a79efac5a015c8b36a2577f65c/ETH">FF – ETH</a>
+                    <div class="py-5">
+                        <a target="_blank" href="https://app.uniswap.org/#/add/0x692eb773e0b5b7a79efac5a015c8b36a2577f65c/ETH" class="btn-w">Actual APY : <span class="l-eth-apy">412.79</span>%</a>
+                    </div>
+                    <div class="box-2">
+                        <h5 class="text-left pl-4">Deposit FF–ETH LP
+                        </h5>
+                        <p class="">(Balance: <span id="l-token-balance">...</span> LP)</p>
+
+                        <div class="pb-4">
+                            <div class="time">
+                                <div class="row">
+                                    <div class="col-6 pr-0">
+                                        <input id="l-deposit-input" type="text" name="Name" class="input" placeholder="" value="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bg-blue">
+                                            <button id="l-stake-btn" class="btn-blue2">DEPOSIT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="text-left pl-4">Withdraw FF–ETH LP</h5>
+                        <div class="pb-4">
+                            <div class="time">
+                                <div class="row">
+                                    <div class="col-6 pr-0">
+                                        <input id="l-withdraw-input" type="text" name="Name" class="input" placeholder="" value="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bg-blue">
+                                            <button id="l-unstake-btn" class="btn-blue2">WITHDRAW</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="text-left pl-4">FF rewards</h5>
+                        <div class="pb-4">
+                            <div class="time">
+                                <div class="row">
+                                    <div class="col-6 pr-0">
+                                        <input type="text" id="l-pending-divs" name="Name" disabled="" class="input" placeholder="" value="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bg-blue">
+                                            <button id="l-claim-btn" class="btn-blue2">CLAIM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd Dev -->
+                <div class="col-lg-4 pt-5 text-center">
+                    <a target="_blank" href="https://app.uniswap.org/#/add/0x692eb773e0b5b7a79efac5a015c8b36a2577f65c/0x95ba34760ac3d7fbe98ee8b2ab33b4f1a6d18878" class="btn-blue">FF – DESH</a>
+                    <div class="py-5">
+                      <a target="_blank" href="https://app.uniswap.org/#/add/0x692eb773e0b5b7a79efac5a015c8b36a2577f65c/0x95ba34760ac3d7fbe98ee8b2ab33b4f1a6d18878" class="btn-w">Actual APY : <span class="l-desh-apy">2004.47</span>%</a>
+                  </div>
+                    <div class="box-2">
+                        <h5 class="text-left pl-4">Deposit FF–DESH LP</h5>
+                        <p class="">(Balance: <span id="l-desh-token-balance">...</span> LP)</p>
+                        <div class="pb-4">
+                            <div class="time">
+                                <div class="row">
+                                    <div class="col-6 pr-0">
+                                        <input id="l-desh-deposit-input" type="text" name="Name" class="input" placeholder="" value="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bg-blue">
+                                            <button id="l-desh-stake-btn" class="btn-blue2">DEPOSIT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="text-left pl-4">Withdraw FF–DESH LP</h5>
+                        <div class="pb-4">
+                            <div class="time">
+                                <div class="row">
+                                    <div class="col-6 pr-0">
+                                        <input id="l-desh-withdraw-input" type="text" name="Name" class="input" placeholder="" value="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bg-blue">
+                                            <button id="l-desh-unstake-btn" class="btn-blue2">WITHDRAW</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="text-left pl-4">FF rewards</h5>
+                        <div class="pb-4">
+                            <div class="time">
+                                <div class="row">
+                                    <div class="col-6 pr-0">
+                                        <input id="l-desh-pending-divs" type="text" name="Name" class="input" placeholder="" disabled="" value="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bg-blue">
+                                            <button id="l-desh-claim-btn" class="btn-blue2">CLAIM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd div -->
+                <div class="col-lg-4 pt-5 text-center">
+                    <a data-connected-text="Connected" href="#" class="btn-blue l-connect-wallet-btn">Connect Wallet</a>
+                    <div class="py-5">
+                        <a href="#" class="btn-blue">MY SUMMARY</a>
+                    </div>
+                    <div class="box-blue text-white text-left px-xl-5 px-4">
+                        <div class="row pt-3">
+                            <div class="pl-0 col-7 pr-0">
+                                <h6>Staked ETH LP</h6>
+                            </div>
+                            <div class="col-5">
+                                <h6><span id="l-token-staked">...</span> <br>(<span id="l-share-percent">...</span>%)</h6>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="pl-0 col-7 pr-0">
+                                <h6>Staked DESH LP</h6>
+                            </div>
+                            <div class="col-5 ">
+                                <h6><span id="l-desh-token-staked">...</span> <br>(<span id="l-desh-share-percent">...</span>%)</h6>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="pl-0 col-7">
+                                <h6>My total LP</h6>
+                            </div>
+                            <div class="col-5">
+                                <h6 id="l-total-lp">...</h6>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="pl-0 col-7 pr-0">
+                                <h6>FF claimable</h6>
+                            </div>
+                            <div class="col-5">
+                                <h6 id="l-FF-claimable">...</h6>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="pl-0 col-7 pr-0">
+                                <h6 class="">Appox. value of my FF rewards</h6>
+                            </div>
+                            <div class="col-5">
+                                <h6>$<span id="l-approx-usd-value">...</span></h6>
+                            </div>
+                        </div>
+                        <!-- <p>
+                            &nbsp;<br />
+                        </p> -->
+                        <div class="pt-3 text-center">
+                            <a id="l-exit-btn" href="#" class="btn-gray1">EXIT ETH POOL</a>
+                        </div>
+                        <div class="pt-2 text-center">
+                            <a id="l-desh-exit-btn" href="#" class="btn-gray1">EXIT DESH POOL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About -->
+    <div class="pad">
+        <div class="container pt-5 text-white" id="about">
+            <div class="row">
+                <div class="col-lg-3 pt-4 text-white h-1">
+                    <h1 class="text text-center text-lg-righ top-30">ABOUT<br class="d-none d-lg-block"> FF</h1>
+                </div>
+                <div class="col-lg-9 text-center text-lg-left pt-5">
+                    <div style="font-size: 3rem; margin-bottom: 2rem;">
+                        <span class="typed-words">Limited supply with infinite rew</span><span class="typed-cursor">|</span>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <p class="big-number counter">28,199</p>
+                            <p>Community Members <br>(all platforms)</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="big-number counter">79,000</p>
+                            <p>Partners <br>Community</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="big-number counter">100,000</p>
+                            <p>Market cap "$" <br>(at launching)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- Footer -->
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+   
+</body>
+</html>
